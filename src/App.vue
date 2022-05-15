@@ -1,6 +1,10 @@
 <template>
     <div class="app">
         <header class="header">
+            <div class="header__title">
+                <img src="./assets/job-search-svgrepo-com.svg" title="site logo">
+                <h1>Software Jobs</h1>
+            </div>
             <div class="header__order">
                 <button
                     class="header__button"
@@ -40,11 +44,11 @@ export default defineComponent({
     },
     setup() {
         const jobs = ref<Job[]>([
-            { title: 'Frontend', location: 'Moscow', salary: 4000, id: '1' },
-            { title: 'Frontend', location: 'Moscow', salary: 4000, id: '2' },
-            { title: 'Frontend', location: 'Moscow', salary: 4000, id: '3' },
-            { title: 'Frontend', location: 'Moscow', salary: 4000, id: '4' },
-            { title: 'Frontend', location: 'Moscow', salary: 4000, id: '5' }
+            { title: 'Front-end developer', location: 'Moscow', salary: 4000, id: '1' },
+            { title: 'Imposer', location: 'Jerusalem', salary: 700, id: '2' },
+            { title: 'Ios developer', location: 'Tallinn', salary: 7680, id: '3' },
+            { title: 'Front-end', location: 'Shanghai', salary: 98, id: '4' },
+            { title: 'Programmer', location: 'Tokyo', salary: 987, id: '5' }
         ])
         const order = ref<OrderTerm>('title')
 
@@ -78,6 +82,20 @@ export default defineComponent({
         border-radius: 4px;
         font-weight: bold;
         cursor: pointer;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        img {
+            width: 60px;
+            margin-right: 20px;
+        }
     }
 }
 </style>
