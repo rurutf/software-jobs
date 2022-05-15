@@ -14,7 +14,11 @@
                     <p class="job-list__salary-item">{{ job.salary }} dollars</p>
                 </div>
                 <div class="job-list__description">
-                    <p>lorem ipsum</p>
+                    <p>
+                        Deeply familiarity with modern JS/CSS/HTML. For example, if I show you some elements styled
+                        with flexbox, you shouldn't need to look up what each style does - you should know because
+                        you've done it a million times. Map, filter, and enhanced ES6 object literals are your best friends.
+                    </p>
                 </div>
             </li>
         </transition-group>
