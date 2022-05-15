@@ -1,6 +1,5 @@
 <template>
     <div class="job-list">
-        <p>Ordered by {{ order }}</p>
         <transition-group name="list" tag="ul">
             <li
                 v-for="job in orderedJobs"
